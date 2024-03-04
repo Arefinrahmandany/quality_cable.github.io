@@ -1,0 +1,156 @@
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900
+
+
+.raleway-<uniquifier> {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.noto-sans-<uniquifier> {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+*/
+
+.bg-light-gray{
+    background-color: #e5e7eb;
+}
+
+.nav-heading{
+    font-size: 1rem;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+
+}
+.nav-heading:hover{
+    font-size: 1.2rem;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    color: red;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.heading-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 56.25%; /* Maintain a 16:9 aspect ratio */
+}
+
+.heding-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+.border-redius{
+    border-radius: 10px;
+}
+.border-color{
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+}
+
+.about-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.category-sec{    
+    border: 2px solid  red;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 10px;
+}
+.category-sec div{ 
+    position: absolute;   
+    background-color: red;
+    height: 45px;
+    width: 285px;
+    transition: background-color 0.3s ease;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    bottom: 0;
+    color: #fff;    
+    border-radius: 0px 0px 10px 10px;
+}
+.category-sec div h5{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.category-sec div:hover {
+    background-color: #fff;
+    color: red;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateX(150px); /* Initial position to the right */
+    animation: fadeInFromRight 1s ease-out forwards; /* Animation duration and timing function */
+}
+
+@keyframes fadeInFromRight {
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Final position (center) */
+    }
+}
+
+@media all and (min-width: 992px) {
+    .navbar .dropdown-menu-end { right: 0; left: auto; }
+    .navbar .nav-item .dropdown-menu { display: block; opacity: 0; visibility: hidden; transition: .7s; margin-top: 0; }
+    .navbar .nav-item:hover .nav-link { color: red; }
+    .navbar .dropdown-menu.fade-down { top: 80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+    .navbar .dropdown-menu.fade-up { top: 100%; }
+    .navbar .nav-item:hover .dropdown-menu { transition: .7s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg); }
+  }
